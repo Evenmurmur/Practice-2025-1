@@ -62,7 +62,7 @@
 - [Полное руководство по Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ---
-
+```
 ## Структура проекта
 ├── index.html
 ├── about.html
@@ -75,5 +75,5 @@
 ├── logo.png
 └── adaptive-images/
 
-
+```
 ---
