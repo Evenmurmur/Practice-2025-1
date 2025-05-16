@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте - АИС для транспортной компании</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fab fa-telegram"></i> Дневник в Телеграмме
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">О проекте</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Участники</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="journal.html">Журнал</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Ресурсы</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container my-4">
+        <div class="page-header mb-5">
+            <h1 class="display-4 text-center ms-4">О проекте</h1>
+            <p class="lead text-center ms-4">Информация о проекте и его целях</p>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <img src="img/time_tracking_problem.svg" alt="Проблема неучтённого времени" class="img-fluid rounded shadow mb-4">
+            </div>
+            <div class="col-lg-6">
+                <h2>Актуальность и проблематика</h2>
+                <h3>Проблема неучтённого времени</h3>
+                <p>В современном ритме жизни огромное количество задач, действий и отвлекающих факторов делает управление временем критически важным навыком. Однако большинство людей не отслеживают, как именно расходуется их день. В результате:</p>
+                <ul>
+                    <li>теряется продуктивность;</li>
+                    <li>невозможно оценить фактическую загрузку;</li>
+                    <li>сложно отличить «работу» от имитации деятельности;</li>
+                    <li>невозможно предоставить отчёт, если он требуется (например, в фриланс-проектах).</li>
+                </ul>
+                <p>Особенно остро эта проблема проявляется у разработчиков, менеджеров, студентов, исследователей и всех, кто работает на результат, а не по фиксированному графику.</p>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-6 order-lg-2">
+                <img src="img/telegram_reporting.svg" alt="Отчетность в Telegram" class="img-fluid rounded shadow mb-4">
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <h3>Проблема в сфере разработки ПО</h3>
+                <p>При разработке программного обеспечения часто отсутствует чёткая система сбора статистики о процессе: когда началась работа над задачей, сколько времени было потрачено, были ли прерывания. Это приводит к:</p>
+                <ul>
+                    <li>постоянным переработкам из-за «потерянных» задач;</li>
+                    <li>отсутствию данных для пост-анализа;</li>
+                    <li>невозможности доказать проделанную работу (если нет ТЗ или логов);</li>
+                    <li>завышенным срокам сдачи и недовольству заказчиков.</li>
+                </ul>
+                <p>Telegram-бот, встроенный в привычную среду общения, становится инструментом не только учёта, но и дисциплины. Он позволяет фиксировать все действия в режиме реального времени, без необходимости использовать внешние приложения, как Trello или Google Sheets.</p>
+            </div>
+        </div>
+        <div class="card mb-5 shadow">
+            <div class="card-header">
+                <h3>Существующие решения и их недостатки</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="img/trello_board.png" alt="Существующие решения" class="img-fluid rounded shadow mb-4">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Инструмент</th>
+                                        <th>Проблемы при использовании</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Google Calendar</td>
+                                        <td>Не предназначен для мгновенного ввода, нет статистики</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trello</td>
+                                        <td>Требует ручного учёта времени, перегружен функционалом</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Notion</td>
+                                        <td>Не автоматизирует учёт времени, плохо подходит для смартфонов</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Toggl</td>
+                                        <td>Требует регистрации, привязан к браузеру или отдельному приложению</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Таблицы Excel/Google</td>
+                                        <td>Требуют дисциплины и не приспособлены для моментального ввода</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <h3>Почему Telegram — оптимальная платформа</h3>
+                <p>Telegram как платформа обладает рядом уникальных преимуществ:</p>
+                <ul>
+                    <li><strong>Универсальность:</strong> доступен как на ПК, так и на смартфоне.</li>
+                    <li><strong>Онлайн-доступность:</strong> данные доступны с любого устройства, в любое время.</li>
+                    <li><strong>Привычный интерфейс:</strong> пользователю не нужно переучиваться.</li>
+                    <li><strong>Поддержка ботов:</strong> позволяет реализовать интерактивную логику с кнопками, меню и командами.</li>
+                    <li><strong>Безопасность:</strong> Telegram имеет встроенное сквозное шифрование в секретных чатах, а боты можно усилить через сторонние криптобиблиотеки.</li>
+                </ul>
+                <p>Таким образом, Telegram-бот превращается в удобное кроссплатформенное решение, встраивающееся в повседневную жизнь пользователя.</p>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="card-title">Цели и задачи проекта</h3>
+                        <h4>Общая цель</h4>
+                        <p>Цель проекта — разработать Telegram-бота «Дневник в Телеграмме», предназначенного для фиксации пользовательских событий в течение дня с возможностью последующего анализа и генерации отчетов. Проект направлен на повышение личной продуктивности, осознанности и контроля над рабочим временем.</p>
+                        <h4>Ключевые ориентиры:</h4>
+                        <ul>
+                            <li><strong>Мгновенный ввод данных.</strong> Вся информация фиксируется быстро и интуитивно, с помощью команд и кнопок.</li>
+                            <li><strong>Автоматический учет времени.</strong> События фиксируются со временем старта и завершения.</li>
+                            <li><strong>Гибкость.</strong> Пользователь сам определяет типы событий и их содержание.</li>
+                            <li><strong>Безопасность.</strong> Все личные данные, включая названия задач и категорий, зашифрованы.</li>
+                            <li><strong>Удобная отчетность.</strong> В любой момент можно получить сводку дня, недели или месяца.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <h3>Подцели проекта</h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Минимизация времени на ввод
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Пользователь не должен тратить больше 3–5 секунд на начало новой задачи. Это достигается автоматическим определением времени, быстрым выбором типа и сохранением предыдущего состояния.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Унификация задач, действий и прерываний
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Все события разделяются на три логических класса:</p>
+                                <ul>
+                                    <li><strong>Задачи</strong> - основные рабочие элементы, требующие выполнения</li>
+                                    <li><strong>Действия</strong> - вспомогательные операции, сопровождающие работу</li>
+                                    <li><strong>Прерывания</strong> - внешние факторы, влияющие на ход работы</li>
+                                </ul>
+                                <p>Такая классификация позволяет:</p>
+                                <ul>
+                                    <li>Четко структурировать рабочий процесс</li>
+                                    <li>Анализировать эффективность использования времени</li>
+                                    <li>Выявлять источники прерываний и минимизировать их влияние</li>
+                                    <li>Формировать детальные отчеты по каждому типу активности</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Автоматическая аналитика
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Система должна не просто сохранять данные, но и уметь:</p>
+                                <ul>
+                                    <li>определять общее количество задач;</li>
+                                    <li>делить их по типам и статусам;</li>
+                                    <li>находить незавершенные события;</li>
+                                    <li>вычислять общее и «пустое» потраченное время;</li>
+                                    <li>генерировать структурированные отчеты.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h4 class="card-title">Удобная отчётность</h4>
+                        <p>Отчеты создаются автоматически и выводятся в текстовом виде с форматированием. Они содержат:</p>
+                        <ul>
+                            <li>список задач с их временем;</li>
+                            <li>статус выполнения (выполняется, завершена, приостановлена);</li>
+                            <li>общее количество задач и их типы;</li>
+                            <li>общая продолжительность активности.</li>
+                        </ul>
+                        <h4 class="card-title mt-3">Простота использования</h4>
+                        <p>Бот должен быть удобен для неспециалистов: не требует терминалов, и настройки. Достаточно приложения Telegram.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Автоматизированная информационная система</h5>
+                    <p>Проект Московского Политехнического Университета</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Контакты</h5>
+                    <p>Москва, 2025 г.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Evenmurmur/Practice-2025-1" class="text-white me-2" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/Dnevnik_TK_Bot" class="text-white me-2" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Московский Политехнический Университет. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

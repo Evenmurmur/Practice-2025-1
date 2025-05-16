@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - АИС для транспортной компании</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fab fa-telegram"></i>   Дневник в Телеграмме
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О проекте</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Участники</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="journal.html">Журнал</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Ресурсы</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <div class="hero-section text-center py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-center ms-4">Дневник в Телеграмме</h1>
+                    <p class="lead text-center ms-4">Автоматизированная информационная система для транспортной компании</p>
+                    <p class="mb-4 text-center ms-4">Проект студентов Московского Политехнического Университета</p>
+                    <div class="text-center ms-4">
+                        <a href="about.html" class="btn btn-primary btn-lg">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/telegram_diary_logo.png" 
+                         alt="Дневник в Телеграмме" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+
+        <section class="features py-5">
+            <h2 class="text-center mb-5 ms-4">Особенности проекта</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">Учет времени</h3>
+                            <p class="card-text">Автоматический учет времени и удобная отчетность для повышения продуктивности</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tasks fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">Управление задачами</h3>
+                            <p class="card-text">Унификация задач, действий и прерываний для систематизации рабочего процесса</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                            <h3 class="card-title">Аналитика</h3>
+                            <p class="card-text">Автоматическая аналитика для анализа продуктивности и визуализации баланса задач</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-overview py-5 bg-light rounded">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="ms-4">Аннотация проекта</h2>
+                    <p>Проект направлен на разработку Telegram-бота "Дневник в Телеграмме", предназначенного для фиксации пользовательских событий в течение дня с возможностью последующего анализа и генерации отчетов.</p>
+                    <p>Основная цель - повышение личной продуктивности, осознанности и контроля над рабочим временем у сотрудников транспортной компании.</p>
+                    <p>Бот встраивается в привычную среду общения и становится инструментом не только учёта, но и дисциплины, позволяя фиксировать все действия в режиме реального времени без необходимости использовать внешние приложения.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/telegram_bot_report.png" 
+                         alt="Отчет в Telegram боте" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </section>
+
+        <section class="partners py-5">
+            <h2 class="text-start mb-4 ms-4">Заказчик проекта</h2>
+            <div class="text-center">
+                <div class="partner-logo mb-3">
+                    <p class="lead text-center mx-auto" style="max-width: 400px;">ООО «А+А Эксист-инфо»</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Автоматизированная информационная система</h5>
+                    <p>Проект Московского Политехнического Университета</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Контакты</h5>
+                    <p>Москва, 2025 г.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Evenmurmur/Practice-2025-1" class="text-white me-2" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/Dnevnik_TK_Bot" class="text-white me-2" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Московский Политехнический Университет. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

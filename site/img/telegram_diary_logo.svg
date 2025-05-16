@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Дневник в Телеграмме</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0088CC" offset="0%"></stop>
+            <stop stop-color="#0063A9" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="telegram-diary">
+            <rect id="background" fill="#F5F5F5" x="0" y="0" width="800" height="600"></rect>
+            <circle id="telegram-circle" fill="url(#linearGradient-1)" cx="400" cy="300" r="200"></circle>
+            <g id="notebook" filter="url(#filter-2)" transform="translate(260.000000, 175.000000)">
+                <rect id="notebook-base" fill="#FFFFFF" x="0" y="0" width="280" height="350" rx="8"></rect>
+                <rect id="binding" fill="#E74C3C" x="0" y="0" width="30" height="350"></rect>
+                <g id="binding-rings" transform="translate(15.000000, 40.000000)" fill="#D62C1A">
+                    <circle id="ring-1" cx="0" cy="0" r="8"></circle>
+                    <circle id="ring-2" cx="0" cy="45" r="8"></circle>
+                    <circle id="ring-3" cx="0" cy="90" r="8"></circle>
+                    <circle id="ring-4" cx="0" cy="135" r="8"></circle>
+                    <circle id="ring-5" cx="0" cy="180" r="8"></circle>
+                    <circle id="ring-6" cx="0" cy="225" r="8"></circle>
+                    <circle id="ring-7" cx="0" cy="270" r="8"></circle>
+                </g>
+                <g id="lines" transform="translate(50.000000, 60.000000)" fill="#E0E0E0" fill-rule="nonzero">
+                    <rect id="line-1" x="0" y="0" width="200" height="2"></rect>
+                    <rect id="line-2" x="0" y="30" width="200" height="2"></rect>
+                    <rect id="line-3" x="0" y="60" width="200" height="2"></rect>
+                    <rect id="line-4" x="0" y="90" width="200" height="2"></rect>
+                    <rect id="line-5" x="0" y="120" width="200" height="2"></rect>
+                    <rect id="line-6" x="0" y="150" width="200" height="2"></rect>
+                    <rect id="line-7" x="0" y="180" width="200" height="2"></rect>
+                    <rect id="line-8" x="0" y="210" width="200" height="2"></rect>
+                </g>
+                <g id="tasks" transform="translate(60.000000, 80.000000)" fill="#333333">
+                    <rect id="task-1" x="0" y="0" width="180" height="4"></rect>
+                    <rect id="task-2" x="0" y="15" width="150" height="4"></rect>
+                    <rect id="task-3" x="0" y="45" width="160" height="4"></rect>
+                    <rect id="task-4" x="0" y="60" width="130" height="4"></rect>
+                    <rect id="task-5" x="0" y="90" width="170" height="4"></rect>
+                    <rect id="task-6" x="0" y="105" width="140" height="4"></rect>
+                    <rect id="task-7" x="0" y="135" width="155" height="4"></rect>
+                    <rect id="task-8" x="0" y="150" width="125" height="4"></rect>
+                </g>
+                <g id="checkmarks" transform="translate(45.000000, 80.000000)" fill="#4CAF50">
+                    <path d="M0,0 L5,5 L10,0" id="checkmark-1" stroke="#4CAF50" stroke-width="2"></path>
+                    <path d="M0,45 L5,50 L10,45" id="checkmark-3" stroke="#4CAF50" stroke-width="2"></path>
+                    <path d="M0,90 L5,95 L10,90" id="checkmark-5" stroke="#4CAF50" stroke-width="2"></path>
+                    <path d="M0,135 L5,140 L10,135" id="checkmark-7" stroke="#4CAF50" stroke-width="2"></path>
+                </g>
+            </g>
+            <g id="telegram-plane" transform="translate(420.000000, 300.000000) rotate(-30.000000) translate(-420.000000, -300.000000) translate(370.000000, 250.000000)" fill="#FFFFFF">
+                <path d="M100,0 C100,0 33.3333333,77.5 0,100 C29.8611111,102.777778 66.6666667,85 66.6666667,85 L93.0555556,20.8333333 C93.0555556,20.8333333 95.8333333,13.8888889 91.6666667,13.8888889 C90.2777778,13.8888889 88.8888889,14.5833333 88.8888889,14.5833333 L27.7777778,52.7777778 C20.1388889,50 0,43.0555556 0,43.0555556 C0,43.0555556 -2.77777778,40.9722222 0.694444444,38.8888889 C33.3333333,16.6666667 86.1111111,0 86.1111111,0 C86.1111111,0 93.75,-2.08333333 97.9166667,0.694444444 C99.3055556,1.38888889 100,3.47222222 100,3.47222222 L100,0 Z" id="plane"></path>
+            </g>
+            <text id="Дневник-в-Телеграмме" font-family="Arial-BoldMT, Arial" font-size="48" font-weight="bold" fill="#333333">
+                <tspan x="150" y="520">Дневник в Телеграмме</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

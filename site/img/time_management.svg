@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Time Management</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E8F5E9" offset="0%"></stop>
+            <stop stop-color="#C8E6C9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#4CAF50" offset="0%"></stop>
+            <stop stop-color="#388E3C" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="time-management">
+            <rect id="background" fill="url(#linearGradient-1)" x="0" y="0" width="800" height="600"></rect>
+            <g id="clock-group" filter="url(#filter-3)" transform="translate(200.000000, 50.000000)">
+                <circle id="clock-face" fill="#FFFFFF" cx="200" cy="200" r="200"></circle>
+                <circle id="clock-inner" fill="#F5F5F5" cx="200" cy="200" r="180"></circle>
+                <circle id="clock-center" fill="#333333" cx="200" cy="200" r="10"></circle>
+                
+                <!-- Hour marks -->
+                <line x1="200" y1="40" x2="200" y2="60" stroke="#333333" stroke-width="4"/>
+                <line x1="280" y1="63.2" x2="270" y2="80" stroke="#333333" stroke-width="4"/>
+                <line x1="336.8" y1="120" x2="320" y2="130" stroke="#333333" stroke-width="4"/>
+                <line x1="360" y1="200" x2="340" y2="200" stroke="#333333" stroke-width="4"/>
+                <line x1="336.8" y1="280" x2="320" y2="270" stroke="#333333" stroke-width="4"/>
+                <line x1="280" y1="336.8" x2="270" y2="320" stroke="#333333" stroke-width="4"/>
+                <line x1="200" y1="360" x2="200" y2="340" stroke="#333333" stroke-width="4"/>
+                <line x1="120" y1="336.8" x2="130" y2="320" stroke="#333333" stroke-width="4"/>
+                <line x1="63.2" y1="280" x2="80" y2="270" stroke="#333333" stroke-width="4"/>
+                <line x1="40" y1="200" x2="60" y2="200" stroke="#333333" stroke-width="4"/>
+                <line x1="63.2" y1="120" x2="80" y2="130" stroke="#333333" stroke-width="4"/>
+                <line x1="120" y1="63.2" x2="130" y2="80" stroke="#333333" stroke-width="4"/>
+                
+                <!-- Clock hands -->
+                <line id="hour-hand" x1="200" y1="200" x2="200" y2="120" stroke="#333333" stroke-width="8" stroke-linecap="round" transform="rotate(60, 200, 200)"/>
+                <line id="minute-hand" x1="200" y1="200" x2="200" y2="80" stroke="#333333" stroke-width="6" stroke-linecap="round" transform="rotate(240, 200, 200)"/>
+                <line id="second-hand" x1="200" y1="200" x2="200" y2="60" stroke="#E53935" stroke-width="2" stroke-linecap="round" transform="rotate(190, 200, 200)"/>
+            </g>
+            
+            <!-- Task icons -->
+            <g id="tasks" transform="translate(50.000000, 350.000000)">
+                <rect id="task-card-1" fill="#FFFFFF" x="0" y="0" width="160" height="100" rx="10"></rect>
+                <rect id="task-header-1" fill="url(#linearGradient-2)" x="0" y="0" width="160" height="30" rx="10 10 0 0"></rect>
+                <text font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="10" y="20">Важная задача</tspan>
+                </text>
+                <text font-family="ArialMT, Arial" font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="10" y="50">- Пункт 1</tspan>
+                    <tspan x="10" y="70">- Пункт 2</tspan>
+                    <tspan x="10" y="90">- Пункт 3</tspan>
+                </text>
+            </g>
+            
+            <g id="tasks-2" transform="translate(250.000000, 350.000000)">
+                <rect id="task-card-2" fill="#FFFFFF" x="0" y="0" width="160" height="100" rx="10"></rect>
+                <rect id="task-header-2" fill="#2196F3" x="0" y="0" width="160" height="30" rx="10 10 0 0"></rect>
+                <text font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="10" y="20">Срочная задача</tspan>
+                </text>
+                <text font-family="ArialMT, Arial" font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="10" y="50">- Завершить отчет</tspan>
+                    <tspan x="10" y="70">- Созвониться</tspan>
+                    <tspan x="10" y="90">- Отправить email</tspan>
+                </text>
+            </g>
+            
+            <g id="tasks-3" transform="translate(450.000000, 350.000000)">
+                <rect id="task-card-3" fill="#FFFFFF" x="0" y="0" width="160" height="100" rx="10"></rect>
+                <rect id="task-header-3" fill="#FF9800" x="0" y="0" width="160" height="30" rx="10 10 0 0"></rect>
+                <text font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="10" y="20">Запланировано</tspan>
+                </text>
+                <text font-family="ArialMT, Arial" font-size="12" font-weight="normal" fill="#333333">
+                    <tspan x="10" y="50">- Встреча 14:00</tspan>
+                    <tspan x="10" y="70">- Обед 13:00</tspan>
+                    <tspan x="10" y="90">- Презентация 16:00</tspan>
+                </text>
+            </g>
+            
+            <g id="task-completed" transform="translate(650.000000, 350.000000)">
+                <rect id="task-card-4" fill="#FFFFFF" x="0" y="0" width="160" height="100" rx="10"></rect>
+                <rect id="task-header-4" fill="#9E9E9E" x="0" y="0" width="160" height="30" rx="10 10 0 0"></rect>
+                <text font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="10" y="20">Завершено</tspan>
+                </text>
+                <text font-family="ArialMT, Arial" font-size="12" font-weight="normal" fill="#9E9E9E" text-decoration="line-through">
+                    <tspan x="10" y="50">- Встреча с клиентом</tspan>
+                    <tspan x="10" y="70">- Подготовка отчета</tspan>
+                    <tspan x="10" y="90">- Проверка почты</tspan>
+                </text>
+            </g>
+            
+            <text id="Time-Management" font-family="Arial-BoldMT, Arial" font-size="36" font-weight="bold" fill="#333333">
+                <tspan x="270" y="520">Управление временем</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
