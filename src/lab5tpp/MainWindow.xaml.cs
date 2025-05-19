@@ -215,17 +215,21 @@ namespace Secdisp
             {
                 try
                 {
-                    using (var writer = new StreamWriter(saveFileDialog.FileName))
+                    using (var writer = new StreamWriter(saveFileDialog.FileName, false, Encoding.GetEncoding("windows-1251")))
                     {
-                        writer.WriteLine("Метрика,Значение");
-                        writer.WriteLine($"CPU Usage,{cpuProgressBar.Value}%");
-                        writer.WriteLine($"Memory Usage,{memoryProgressBar.Value}%");
-                        
-                        writer.WriteLine("\nПроцессы:");
-                        writer.WriteLine("Имя,ID,Память (МБ),CPU (%),Путь,Уровень риска,Описание");
+                        writer.WriteLine("Метрика;Значение");
+                        writer.WriteLine($"CPU Usage;{cpuProgressBar.Value:F1}%");
+                        writer.WriteLine($"Memory Usage;{memoryProgressBar.Value:F1}%");
+                        writer.WriteLine();
+                        writer.WriteLine("Процессы:");
+                        writer.WriteLine("Имя;ID;Память (МБ);CPU (%);Путь;Уровень риска;Описание");
                         foreach (var process in processes)
                         {
-                            writer.WriteLine($"{process.Name},{process.Id},{process.MemoryMB},{process.CpuUsage},{process.Path},{process.SecurityLevel},{process.SecurityDescription}");
+                            string name = process.Name?.Replace(';', ' ');
+                            string path = process.Path?.Replace(';', ' ');
+                            string level = process.SecurityLevel?.Replace(';', ' ');
+                            string desc = process.SecurityDescription?.Replace(';', ' ');
+                            writer.WriteLine($"{name};{process.Id};{process.MemoryMB:F1};{process.CpuUsage:F1};{path};{level};{desc}");
                         }
                     }
                     MessageBox.Show("Данные успешно экспортированы", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -240,18 +244,18 @@ namespace Secdisp
         private void UpdateInterval_Click(object sender, RoutedEventArgs e)
         {
             var input = Microsoft.VisualBasic.Interaction.InputBox(
-                "Введите интервал обновления в секундах (1-60):",
+                "Введите интервал обновления в секундах (15-60):",
                 "Интервал обновления",
                 timer.Interval.TotalSeconds.ToString());
 
-            if (double.TryParse(input, out double seconds) && seconds >= 1 && seconds <= 60)
+            if (double.TryParse(input, out double seconds) && seconds >= 15 && seconds <= 60)
             {
                 timer.Interval = TimeSpan.FromSeconds(seconds);
                 MessageBox.Show($"Интервал обновления установлен на {seconds} секунд", "Настройки", MessageBoxButton.OK, MessageBoxImage.Information);
             }
             else
             {
-                MessageBox.Show("Неверное значение. Введите число от 1 до 60.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Неверное значение. Введите число от 15 до 60.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
