@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="Secdisp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Secdisp"
+        mc:Ignorable="d"
+        Title="Монитор системы" Height="600" Width="1000"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Верхняя панель с кнопками -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10,10,10,0">
+            <Button Content="Выход" Click="Exit_Click" Margin="0,0,10,0"/>
+            <Button Content="Настройки" Click="UpdateInterval_Click" Margin="0,0,10,0"/>
+            <Button Content="Экспорт" Click="ExportData_Click" Margin="0,0,10,0"/>
+        </StackPanel>
+
+        <!-- Верхняя панель с метриками -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10,10,10,0">
+            <StackPanel Margin="0,0,20,0">
+                <TextBlock x:Name="cpuUsageText" Text="Загрузка CPU: 0%" Margin="0,0,0,5"/>
+                <ProgressBar x:Name="cpuProgressBar" Width="200" Height="20" Maximum="100"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock x:Name="memoryUsageText" Text="Использование памяти: 0%" Margin="0,0,0,5"/>
+                <ProgressBar x:Name="memoryProgressBar" Width="200" Height="20" Maximum="100"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Основная область с процессами -->
+        <Grid Grid.Row="2" Margin="10,60,10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Панель поиска и кнопок -->
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBox x:Name="processSearchBox" Width="200" Margin="0,0,10,0" 
+                         TextChanged="ProcessSearch_TextChanged" 
+                         ToolTip="Поиск по имени или ID процесса"/>
+                <Button Content="Проверить безопасность" Click="ScanSecurity_Click" Margin="10,0,10,0"/>
+            </StackPanel>
+
+            <!-- Список процессов -->
+            <ListView x:Name="processesList" Grid.Row="1">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Имя" DisplayMemberBinding="{Binding Name}" Width="150"/>
+                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="80"/>
+                        <GridViewColumn Header="Память (МБ)" DisplayMemberBinding="{Binding MemoryMB}" Width="100"/>
+                        <GridViewColumn Header="CPU (%)" DisplayMemberBinding="{Binding CpuUsage}" Width="80"/>
+                        <GridViewColumn Header="Путь" DisplayMemberBinding="{Binding Path}" Width="200"/>
+                        <GridViewColumn Header="Уровень риска" DisplayMemberBinding="{Binding SecurityLevel}" Width="100"/>
+                        <GridViewColumn Header="Описание" DisplayMemberBinding="{Binding SecurityDescription}" Width="200"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Grid>
+</Window>

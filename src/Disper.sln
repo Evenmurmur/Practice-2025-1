@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src", "lab5tpp\src.csproj", "{D4CBFF33-3539-4361-A7D1-CA1F9FA73838}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4CBFF33-3539-4361-A7D1-CA1F9FA73838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4CBFF33-3539-4361-A7D1-CA1F9FA73838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4CBFF33-3539-4361-A7D1-CA1F9FA73838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4CBFF33-3539-4361-A7D1-CA1F9FA73838}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

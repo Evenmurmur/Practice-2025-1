@@ -1,0 +1,13 @@
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\bin\Debug\Secdisp.exe.config
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\bin\Debug\Secdisp.exe
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\bin\Debug\Secdisp.pdb
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\obj\Debug\src.csproj.AssemblyReference.cache
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\obj\Debug\MainWindow.g.cs
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\obj\Debug\App.g.cs
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\obj\Debug\Secdisp_MarkupCompile.cache
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\obj\Debug\Secdisp_MarkupCompile.lref
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\obj\Debug\MainWindow.baml
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\obj\Debug\Secdisp.g.resources
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\obj\Debug\src.csproj.CoreCompileInputs.cache
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\obj\Debug\Secdisp.exe
+C:\Users\AdminMSI\Documents\practice_2025_1\practice\Practice-2025-1\src\lab5tpp\obj\Debug\Secdisp.pdb
